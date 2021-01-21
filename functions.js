@@ -32,7 +32,7 @@ function startTimer() {
     currentStatus = gameStatuses[2];
     if(time<0 || minute <0) resetTimer();
     cron1 = setInterval(() => { updateCountDowm(); }, 1000);
-    cron4 = setInterval(() => { status(); }, 500); 
+    // cron4 = setInterval(() => { status(); }, 500); 
   } 
 }
 function pauseTimer() {
