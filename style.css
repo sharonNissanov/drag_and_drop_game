@@ -1,0 +1,144 @@
+#clock{
+    background-color: #AD9D9D;
+    margin: 20px auto;
+    font-size: 35px;
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 40%;
+   text-align: center;
+   padding: 10px;
+   color: white;
+   border: 4px solid #aaaaaa;
+   /* outline-style: solid;  */
+   border-radius: 25px;
+   height: 240px;
+   width: 500px;
+  
+}
+#volume_up{
+    display: block; position: absolute; cursor: pointer;     
+    color: #fccbcb; font-size:48px;  
+}
+#volume_off{
+    display: none; position: absolute; cursor: pointer;
+    color: #fccbcb; font-size:48px;
+}
+
+#element{
+    cursor:grab;
+    /* top:10px;
+    left: 10px; */
+    position: absolute; 
+    display: none;
+    width: 200px;
+    height: 200px;
+}
+#shoes{
+    cursor:grab;
+    /* top:10px;
+    left: 10px; */
+    position: absolute; 
+    display: none;  
+    width: 200px;
+    height: 200px;
+
+}
+.droptarget {
+    float: left; 
+    width: 200px; 
+    height: 55px;
+    margin: 15px;
+    padding: 20px;
+    margin-left: 20;
+    border: 1px solid #aaaaaa;
+    cursor:grab;
+    /* not relevant */
+    /* position: absolute;
+    left: 1000px; */
+    
+}
+#dropZone {
+    /* float: left;  */
+    width: 200px; 
+    height: 200px; 
+    animation: none ;
+    animation-duration: 0.8s;
+    background-image: url("pictures/closetcopy.png");
+    position: absolute;
+    left:45%;
+    top:60%;
+    background-repeat: no-repeat;
+}
+
+
+
+@keyframes greenAnimation {
+    0%   {background-color: rgb(66, 95, 66);}
+    25%  {background-color: rgb(0, 255, 55);}
+    50%  {background-color: rgb(0, 255, 128);}
+    100% {background-color: rgb(0, 255, 55);}
+    50% {
+        opacity: 0;
+        border-radius: 35px;
+    }
+}
+
+
+@keyframes redAnimation {
+    0%   {background-color: rgb(128, 0, 21);}
+    25%  {background-color: rgb(148, 39, 39);}
+    50%  {background-color: rgb(223, 15, 15);}
+    100% {background-color: rgb(170, 80, 73);}
+    50% {
+        opacity: 0;
+        border-radius: 35px;
+      }
+}
+body{
+    margin: auto;
+    background-color: #838383;
+   
+}
+
+.button {
+    position: relative;
+    background-color: #d9adad;
+    border: none;
+    font-size: 22px;
+    color: white;
+    /* padding: 10px; */
+    width: 80px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+  
+  .button:after {
+    content: "";
+    background: white;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+  
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+  }
+
+  img {
+    border-radius: 50%;
+  }

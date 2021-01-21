@@ -1,0 +1,39 @@
+<!-- sharons game -->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Sharon's Game</title>
+    <script src="functions.js"></script>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body >
+    <i id="volume_off" class="material-icons" onclick="handleMuteClick()">volume_off</i>
+    <i id="volume_up" class="material-icons"  onclick="handleMuteClick()">volume_up</i>
+
+    
+    <header id="clock">
+        
+        <span id="minute">03</span> <span id="colon">:</span> <span id="second">00</span>
+        <br /><br />
+        <button class="button" type="button" name="start" onclick="startTimer()">start</button>
+        <button class="button" type="button" name="pause" onclick="pauseTimer()">pause</button>
+        <button class="button" type="button" name="reset" onclick="resetTimer()">reset</button>
+        <h1 id="headline">SCORE: <span id="score">0</span> </h1>
+        <p id="turn"></p>
+    </header>
+
+        <div  id="dropZone"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+
+        <img id="element" ondragstart="dragStart(event)"  
+        draggable="false"  alt="img" >
+
+        <img id="shoes" ondragstart="dragStart(event)"  
+        draggable="false" src="pictures/shoes.png" alt="shoes" >
+    
+
+
+</body>
+</html>
