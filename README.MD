@@ -1,4 +1,4 @@
-##Drag and Drop game
+## Drag and Drop game
 ⚡️ Using html5, css3, js to develop a drag and drop game.⚡️
 # Live preview: https://drag-and-drop-game.herokuapp.com/
 ## ❗ ❗ ❗ This is not an ordinary game ❗ ❗ ❗
