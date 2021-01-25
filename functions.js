@@ -81,7 +81,7 @@ function updateCountDowm() {
   
       if((minute == 0 && second == 0 ) ||  counter == 10)
       {
-        if( counter == 10){
+        if( counter <= 10){
           bMusic.pause();
           pauseTimer();
           applause.play();
